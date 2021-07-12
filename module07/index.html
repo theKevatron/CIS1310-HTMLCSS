@@ -1,6 +1,32 @@
 <!doctype html>
 <html>
 <head>
+  
+  aside:first-child{
+    left: 0px;
+  }
+  aside:last-child{
+    right: 0px;
+  }
+  aside{
+    width: 20%;
+    position: absolute;
+  }
+  main{
+    width: 60%;
+    margin-right: 20%;
+    margin-left: 20%;
+    min-height: calc(100vh - 400px);
+  }
+  footer{
+    width: 100%;
+    height: 200px;
+  }
+  #content{
+  position: absolute
+  }
+  
+  
 </head>
 
 <body>
@@ -11,35 +37,22 @@
 </header>
   
 
-<div id="content" postion:relative>
+<div id="content">
   <aside>
-    aside:first-child{
-    left: 0px;
-    }
-    width: 20%;
-    position: absolute;
     ASIDE
   </aside>
   
   <main>
-    width: 60%;
-    margin-right: 20%;
-    margin-left: 20%;
-    min-height: calc(100vh - 400px);
+    MAIN
   </main>
   
   <aside>
-    aside:last-child{
-    right: 0px;
-    }
+    ASIDE
   </aside>
-    
-    
-    
+        
 <footer>
-  width: 100%;
-  height: 200px;
   <p>FOOTER</p>
 </footer>
+  
 </body>
 </html>
