@@ -1,37 +1,8 @@
 <!doctype html>
 <html>
 <head>
-<style>  
-  header{
-    width: 100%;
-    height: 200px;
-    color: #34ebd3;
-  }
-  aside:first-child{
-    left:0px;
-  }
-  aside:last-child{
-    right:0px;
-  }
-  aside{
-    width:20%;
-    position:absolute;
-  }
-  main{
-    width:60%;
-    margin-right:20%;
-    margin-left:20%;
-    min-height:calc(100vh - 400px);
-    color:#dc34eb;
-  }
-  footer{
-    width:100%;
-    height:200px;
-    color:#34ebd3;
-  }
-  #content{
-  position:absolute
-  }
+<style>
+  
   body {
   margin:0px;
   padding:0px;
@@ -44,24 +15,73 @@
   
 <header>
   <h1>HEADER</h>
+    header{
+    width: 100%;
+    height: 200px;
+    color: #34ebd3;
+  }
 </header>
   
 
 <div id="content">
+  #content{
+  position:absolute
+  }
   <aside>
-    ASIDE
+    
+    <p>ASIDE</p>
+    
+    aside:first-child{
+    left:0px;
+    }
+    
+    aside{
+    width:20%;
+    position:absolute;
+    }
+    
+    
   </aside>
   
   <main>
+    
     <p>MAIN</p>
+    
+    main{
+    width:60%;
+    margin-right:20%;
+    margin-left:20%;
+    min-height:calc(100vh - 400px);
+    color:#dc34eb;
+    }
+    
   </main>
   
   <aside>
+    
     <p>ASIDE</p>
+    
+    aside:last-child{
+    right:0px;
+    }
+    
+    aside{
+    width:20%;
+    position:absolute;
+    }
+   
   </aside>
         
 <footer>
+  
   <p>FOOTER</p>
+  
+  footer{
+    width:100%;
+    height:200px;
+    color:#34ebd3;
+  }
+  
 </footer>
   
 </body>
