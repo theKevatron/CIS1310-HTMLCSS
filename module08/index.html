@@ -4,6 +4,13 @@
 <meta charset="utf-8">
 <title>Grid Example</title>
 <style type="text/css">
+    html {
+        box-sizing: border-box;
+    }
+    *, *:before, *:after {
+        box-sizing: inherit;
+        overflow:auto;
+    }
     body {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
