@@ -1,0 +1,59 @@
+html {
+ box-sizing: border-box;
+}
+*, *:before, *:after {
+ box-sizing: inherit;
+ overflow:auto;
+}
+<head>
+<meta charset="utf-8">
+<title>Grid Example</title>
+<style type="text/css">
+  body{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto 2fr auto;
+    grid-template-areas:
+      "header header header"
+      "left main right"
+      "footer footer footer"
+      
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+  }
+  header{
+    grid-area: header;
+    padding: 1em;
+    background-color: green;
+  }
+  aside{
+    grid-area: left;
+    padding: 1em;
+    background-color: gray;
+  }
+  main{
+    grid-area: main;
+    padding: 1em;
+    background-color: brown;
+  }
+  aside:last-of-type {
+    grid-area: right;
+  }
+  footer{
+    grid-area: footer;
+    padding: 1em;
+    background-color: green;
+  }
+</style>
+</head>
+
+<body>
+  <header><p>HEADER</p></aside>
+  <aside><p>LEFT</p></aside>
+  <main><p>MAIN</p></aside>
+  <aside><p>RIGHT</p></aside>
+  <footer><p>FOOTER</p></aside>
+</body>
+</html>
+
