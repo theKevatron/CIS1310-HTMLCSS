@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <title>Grid Example</title>
 <style type="text/css">
-html {
- box-sizing: border-box;
-}
-*, *:before, *:after {
- box-sizing: inherit;
- overflow:auto;
-}
-  body{
+    html {
+     box-sizing: border-box;
+    }
+    *, *:before, *:after {
+     box-sizing: inherit;
+     overflow:auto;
+    }
+    body {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: auto 1fr auto;
@@ -23,30 +23,30 @@ html {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-  }
-  header{
+    }
+    header {
     grid-area: header;
     padding: 1em;
     background-color: green;
-  }
-  aside{
+    }
+    aside {
     grid-area: left;
     padding: 1em;
     background-color: gray;
-  }
-  main{
+    }
+    main {
     grid-area: main;
     padding: 1em;
     background-color: brown;
-  }
-  aside:last-of-type {
+    }
+    aside:last-of-type {
     grid-area: right;
-  }
-  footer{
+    }
+    footer {
     grid-area: footer;
     padding: 1em;
     background-color: green;
-  }
+    }
 </style>
 </head>
 
