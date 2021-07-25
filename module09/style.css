@@ -1,17 +1,16 @@
+@charset "utf-8";
 <style type="text/css">
-    section {
-        margin: 2em;
-        padding: 2em;
-        border: 1em;
-        width: 30em;
-        background-color: orange; 
-    }
-    section:first-of-type {
-        box-sizing: content-box;
-    }
-    section:last-of-type {
-        box-sizing: border-box;
-    }
+section {
+    margin: 2em;
+    padding: 2em;
+    border: 1em;
+    width: 30em;
+    background-color: orange; 
+}
+section:first-of-type {
+    box-sizing: content-box;
+}
+section:last-of-type {
+    box-sizing: border-box;
+}
     
-    
-</style>
