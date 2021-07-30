@@ -1,0 +1,206 @@
+/*
+Description:  Default theme for Classes
+Author:       Joseph Neathawk
+Author URI:   https://knighthawk0811.github.io
+License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl.html
+*/
+
+
+
+/*--------------------------------------------------------------
+selector {
+	layout(position)
+	
+	content(text)
+	
+	design(background)
+	
+	other(z-index)
+}
+----------------------------------------------------------------
+>>> COLORS:	  
+----------------------------------------------------------------
+	blue-dark:#003366;
+	green:#00cc66;	
+	red: #aa0000;
+	yellow: #DFE69E rgba(255,255,100,0.5);
+
+----------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Main Structure
+# General Elements
+# Modal Navigation
+# Navigation
+# Header Area
+# Content Area
+# Footer Area
+# Reusable Classes
+# Other
+# Templates
+# Media Queries
+
+--------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------
+# Main Structure
+--------------------------------------------------------------*/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+html.not-top { 
+	display:none;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/*the entire body of the html page*/
+body {    
+	background: #eeeeee;
+}
+/* a wrapper around all the actual page content
+this will be centered on the page*/
+#page {
+    margin: 3px auto;
+    position: relative;
+    width: calc(100% - 10px);
+    max-width:1000px;
+	
+    background: rgba(255,255,255,0.75);
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px 2px rgba(0,0,0,0.25);
+}
+
+/*--------------------------------------------------------------
+# General Elements
+--------------------------------------------------------------*/
+iframe {
+    width:100%;
+    
+    border:1px solid rgba(0,0,0,0.5);
+}
+/*--------------------------------------------------------------
+# Modal Navigation
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Header Area
+--------------------------------------------------------------*/
+/*main header div*/
+#header {
+    margin: 0;
+	min-height:5em;
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+    background-color: #529B46;
+}
+
+/*--------------------------------------------------------------
+# Content Area
+--------------------------------------------------------------*/
+#content {
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+    width: 100%
+}
+
+   
+
+/*--------------------------------------------------------------
+# Footer Area
+--------------------------------------------------------------*/
+/*the footer of the page*/
+#footer {
+	height:3em;
+    margin: 0;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background: #529B46;
+}
+/*--------------------------------------------------------------
+# Reusable Classes
+--------------------------------------------------------------*/
+
+
+.polaroid {
+    padding: 1em;
+    background-color: grey;
+    border-radius: 1rem;
+    margin: 1em 1em 2em 1em;
+    max-width: 600px;
+}
+.polaroid .aspect-ratio {
+
+}
+.polaroid .aspect-ratio img {
+    width: 100%;
+    height: auto;
+}
+.polaroid p {
+    text-align: center;
+    font-size: 2em;
+}
+
+
+
+/*--------------------------------------------------------------
+# Other
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Templates
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+
+/* for-phone-only */
+@media only screen and (max-width: 599px) {
+	
+}
+
+/* for-tablet-portrait-up */
+@media only screen and (min-width: 600px) {
+	
+}
+
+/* for-tablet-portrait-only */
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+	
+}
+
+/* for-tablet-landscape-up */
+@media only screen and (min-width: 900px) {
+
+}
+
+/* for-tablet-landscape-only */
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
+	
+}
+
+/* for-desktop-up */
+@media only screen and (min-width: 1200px) {
+	
+}
+
+/* for-desktop-only */
+@media only screen and (min-width: 1200px) and (max-width: 1799px) {
+	
+}
+
+/* for-big-desktop-up */
+@media only screen and (min-width: 1800px) {
+	
+}
