@@ -1,1 +1,40 @@
+.nav {
+    	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  }
 
+.nav a {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 15%;
+    margin-left: 1em;
+    margin-right 1em;
+  }
+
+.section {
+  max-width: 100%;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.boxes div {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 250px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
