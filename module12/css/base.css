@@ -612,7 +612,6 @@ body {
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
-  max-width: 100%;
 }
 .nav a {
   padding-left: 0;
@@ -625,9 +624,6 @@ body {
 .footer {
   color: white;
   padding: 30px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
 }
 .footer form{
   display: flex;
@@ -682,23 +678,10 @@ form input {
   color: black;
 }
 
-.boxes {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
 .boxes div {
   border-radius: 5px;
   padding: 10px 10px 0 10px;
   background-color: rgba(0,0,0,.1);
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 250px;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  align: center;
 }
 .boxes .more {
   margin-top: auto;
@@ -724,19 +707,10 @@ form input {
 
 @media (max-width: 576px) {
   .nav {
-    	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
   }
   .nav a {
     flex: 1 1 1em;
     margin-bottom: 2px;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 15%;
-    margin-left: 1em;
-    margin-right 1em;
   }
 }
 
