@@ -707,7 +707,10 @@ form input {
 
 @media (max-width: 576px) {
   .nav {
-    flex-flow: column;
+    	display: flex;
+	    flex-direction: row;
+	    flex-wrap: nowrap;
+	    justify-content: space-between;
   }
   .nav a {
     flex: 1 1 1em;
