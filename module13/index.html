@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>   
+   <title>@media</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+   <style type="text/css">
+    body {
+      background-color:#123456;
+    }
+    .container {
+      padding:1em 0;
+      background-color:rgba(255, 255, 255, 0.7);
+      display:flex;
+      flex-flow: column;
+    }
+    .container > div {
+      margin:0.5em 0.5em;
+      padding:1em;
+      width:calc(100% - 3em);
+
+      background-color:#ff2222;
+      border-radius:999px;
+    }
+
+    @media screen and (max-width:575px) {
+      .container > .mobile-only {
+        background-color:#00ff00;
+      }
+    }
+
+   </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+      <div class="mobile-only">Mobile Screen Size - 575px and smaller</div>
+
+      <div class="tablet-portrait-and-larger">Tablet Portrait and Larger - 576px and larger</div>
+
+      <div class="tablet-portrait-only">Tablet Portrait - 576px to 767px</div>
+
+      <div class="tablet-landscape-and-larger">Tablet Landscape and Larger - 768px and larger</div>
+
+      <div class="tablet-landscape-only">Tablet Landscape - 768px to 991px</div>
+
+      <div class="desktop-and-larger">Desktop and Larger - 992px and larger</div>
+
+      <div class="desktop-only">Desktop - 992px to 1199px</div>
+
+      <div class="large-desktop-and-larger">Large Desktop and larger - 1200px and larger</div>
+
+      <div class="large-desktop-only">Large Desktop - 1200px to 1399px</div>
+
+      <div class="extra-large-desktop-and-larger">Extra Large Desktop and larger - 1400px and larger</div>
+  </div>
+   
+</body>
+</html>
