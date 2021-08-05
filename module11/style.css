@@ -143,7 +143,7 @@ iframe {
 
 .polaroid {
     padding: 1em;
-    background-color: grey;
+    background-color: #f8f8ff;
     border-radius: 1rem;
     margin: 1em 1em 2em 1em;
     max-width: 600px;
@@ -171,7 +171,6 @@ iframe {
 .polaroid p {
     text-align: center;
     font-size: 2em;
-    background-color: #f8f8ff;
     font-family: URW Chancery L, cursive
     text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
 }
