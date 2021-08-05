@@ -60,7 +60,13 @@ html.not-top {
 }
 /*the entire body of the html page*/
 body {    
-	background: #eeeeee;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d5cea6+0,c9c190+40,b7ad70+100;Brown+3D */
+background: #d5cea6; /* Old browsers */
+background: -moz-linear-gradient(top,  #d5cea6 0%, #c9c190 40%, #b7ad70 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #d5cea6 0%,#c9c190 40%,#b7ad70 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #d5cea6 0%,#c9c190 40%,#b7ad70 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5cea6', endColorstr='#b7ad70',GradientType=0 ); /* IE6-9 */
+
 }
 /* a wrapper around all the actual page content
 this will be centered on the page*/
@@ -73,13 +79,6 @@ this will be centered on the page*/
     background: rgba(255,255,255,0.75);
     border-radius: 5px;
     box-shadow: 0px 0px 1px 2px rgba(0,0,0,0.25);
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d5cea6+0,c9c190+40,b7ad70+100;Brown+3D */
-background: #d5cea6; /* Old browsers */
-background: -moz-linear-gradient(top,  #d5cea6 0%, #c9c190 40%, #b7ad70 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #d5cea6 0%,#c9c190 40%,#b7ad70 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #d5cea6 0%,#c9c190 40%,#b7ad70 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5cea6', endColorstr='#b7ad70',GradientType=0 ); /* IE6-9 */
-
 }
 
 /*--------------------------------------------------------------
@@ -118,7 +117,7 @@ iframe {
     margin: 0 auto;
     position: relative;
     padding: 0;
-    width: 100%
+    width: 100%;
 }
 
    
@@ -162,7 +161,7 @@ iframe {
     position: absolute;
     top: 0px;
     right: 0px;
-    bottom: 0px:
+    bottom: 0px;
     left: 0px;
     height: 100%;
     width: 100%;
@@ -171,7 +170,7 @@ iframe {
 .polaroid p {
     text-align: center;
     font-size: 2em;
-    font-family: URW Chancery L, cursive
+    font-family: URW Chancery L, cursive;;
     text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
 }
 
