@@ -14,15 +14,14 @@
     }
     body {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr 2fr 1fr auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr 1fr auto;
         grid-template-areas:
-            "header"
-            "left"
-            "main" 
-            "right"
-            "footer";
-        
+            "header header"
+            "left right"
+            "main main"
+            "footer footer";
+          
         min-height: 100vh;
         margin: 0;
         padding: 0;
