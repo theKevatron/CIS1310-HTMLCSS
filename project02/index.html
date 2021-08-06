@@ -14,14 +14,15 @@
     }
     body {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto 1fr 1fr auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr 2fr 1fr auto;
         grid-template-areas:
-            "header header"
-            "left right"
-            "main main"
-            "footer footer";
-          
+            "header"
+            "left"
+            "main" 
+            "right"
+            "footer";
+        
         min-height: 100vh;
         margin: 0;
         padding: 0;
@@ -31,7 +32,7 @@
         padding: 1em;
         background-color: green;
     }
-    aside {
+    aside: first-of-type {
         grid-area: left;
         padding: 1em;
         background-color: gray;
@@ -43,6 +44,7 @@
     }
     aside:last-of-type {
         grid-area: right;
+        background-color: yellow;
     }
     footer {
         grid-area: footer;
