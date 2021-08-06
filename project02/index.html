@@ -48,6 +48,45 @@
         padding: 1em;
         background-color: green;
     }
+
+@media screen and (max-width:575px) {
+      .container > .body {
+        display: grid;
+        grid-template-columns: 1fr
+        grid-template-rows: auto 1fr 1fr 1fr auto;
+        grid-template-areas:
+            "header"
+            "left"
+            "main" 
+            "right"
+            "footer";
+    }
+   }
+    
+@media screen and (min-width:576px) and (max-width:991px) {
+      .container > .body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 2fr 1fr auto;
+        grid-template-areas:
+            "header header"
+            "left right"
+            "main main"
+            "footer footer";
+     }
+    }
+
+@media screen and (min-width:992px) {
+      .container > .body {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+            "header header header"
+            "left main right"
+            "footer footer footer";
+     }
+    }
 </style>
 </head>
 
