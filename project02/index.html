@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<A HREF = "style.css" target=”_blank”>style</A>
+<meta charset="utf-8">
+<title>Grid Example</title>
+<style type="text/css">
+    html {
+        box-sizing: border-box;
+    }
+    *, *:before, *:after {
+        box-sizing: inherit;
+        overflow:auto;
+    }
+    body {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+            "header header header"
+            "left main right"
+            "footer footer footer";
+      
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        grid-area: header;
+        padding: 1em;
+        background-color: green;
+    }
+    aside {
+        grid-area: left;
+        padding: 1em;
+        background-color: gray;
+    }
+    main {
+        grid-area: main;
+        padding: 1em;
+        background-color: brown;
+    }
+    aside:last-of-type {
+        grid-area: right;
+    }
+    footer {
+        grid-area: footer;
+        padding: 1em;
+        background-color: green;
+    }
+</style>
+</head>
+
+<body>
+  <header><h1>HEADER</h1></header>
+  <aside><p>LEFT</p></aside>
+  <main><p>MAIN</p></main>
+  <aside><p>RIGHT</p></aside>
+  <footer><p>FOOTER</p></footer>
+</body>
+</html>
