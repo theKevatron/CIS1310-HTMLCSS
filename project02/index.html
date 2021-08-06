@@ -48,9 +48,18 @@
     }
 
 @media screen and (max-width:575px) {
-        .body {
-          default
-   }
+    .body {
+        display: grid;
+        grid-template-columns: 1fr
+        grid-template-rows: auto 1fr 2fr 1fr auto;
+        grid-template-areas:
+            "header"
+            "left"
+            "main" 
+            "right"
+            "footer";
+    }
+}
     
 @media screen and (min-width:576px) and (max-width:991px) {
       .body {
@@ -63,7 +72,7 @@
             "main main"
             "footer footer";
      }
-    }
+}
 
 @media screen and (min-width:992px) {
       .body {
@@ -75,7 +84,7 @@
             "left main right"
             "footer footer footer";
      }
-    }
+}
 </style>
 </head>
 
